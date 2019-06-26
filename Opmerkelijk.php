@@ -47,7 +47,7 @@ imagepng($image, 'BLUR1_'.$filesize);
 imagedestroy($image);
 }
 
-fwrite($fp, '<page exectime="0.009" description="template353" type="353" days="su,mo,tu,we,th,fr,sa," fromdate="'.date('d-m-Y').' 00:00:00" todate="'.date('d-m-Y', strtotime('+7 days')).' 23:59:00" fromtime="00:00:00" totime="24:00:00" command="" duration="10000" overlays="externalaudio," 
+fwrite($fp, '<page exectime="0.009" description="template353" type="353" days="su,mo,tu,we,th,fr,sa," fromdate="'.date('d-m-Y').' 00:00:00" todate="'.date('d-m-Y', strtotime('+7 days')).' 23:59:00" fromtime="00:00:00" totime="24:00:00" command="" duration="15000" overlays="externalaudio," 
 image2="media/content/BLUR1_'. substr($file, 0, strpos($file, ".")).'.jpg'. '" image2size="'.filesize('BLUR1_'.$filesize).'"'."\n");	
 fwrite($fp, 'image2url="http://www.internetxs.nl/martin/BLUR1_'.$filesize.'"'."\n");	
 fwrite($fp, 'text1="'.htmlspecialchars(preg_replace("/<a[^>]+\>[a-z]+/i", "", $text->title)).'"'."\n");
